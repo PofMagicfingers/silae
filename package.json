@@ -1,0 +1,47 @@
+{
+  "name": "silae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/silae.min.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "webpack --env dev && webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettier": "prettier",
+    "prettier-all": "prettier --write 'src/**/*.js' '*.js' '*.json' 'config/*.js' 'config/*.json'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pofmagicfingers/silae.git"
+  },
+  "author": "Pof Magicfingers",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.4.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "jest": "^23.5.0",
+    "jest-babel": "^1.0.1",
+    "prettier": "^1.14.2",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.18.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-node-externals": "^1.7.2",
+    "yargs": "^12.0.2"
+  },
+  "dependencies": {
+    "soap": "^0.25.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
